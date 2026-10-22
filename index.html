@@ -23,13 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Heebo:wght@700;800;900&display=swap" rel="stylesheet" />
   <link rel="preload" as="image" href="assets/g8.webp" />
 
-  <!-- GA4: זרם "דפי נחיתה" (wiring.md סעיף 8) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR923MZ0BW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag("js", new Date()); gtag("config", "G-NR923MZ0BW");
-  </script>
+  <!-- בלי מדידה בכוונה: טום 22.10.26, הדף לא נכנס לסטטיסטיקות של שווים OS -->
   <script>document.documentElement.classList.add("js");</script>
 
   <style>
@@ -798,7 +792,7 @@
           setTimeout(function () { chatBody.classList.remove("is-collapsed"); chatBody.style.maxHeight = ""; }, reduce ? 0 : 520);
           var b8 = document.getElementById("bubble8");
           if (b8) { try { b8.focus({ preventScroll: true }); } catch (e) {} }
-          if (window.gtag) window.gtag("event", "cta_click", { location: "chat-more" });
+          
         });
       }
 
@@ -821,6 +815,5 @@
 
     })();
   </script>
-  <script src="lp-track.js" defer></script>
 </body>
 </html>
